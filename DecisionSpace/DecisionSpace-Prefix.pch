@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DecisionSpace' target in the 'DecisionSpace' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

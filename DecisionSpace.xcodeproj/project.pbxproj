@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72059AA51715C77C00E80341 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72059AA41715C77C00E80341 /* Foundation.framework */; };
+		72059AAA1715C77C00E80341 /* DecisionSpace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72059AA91715C77C00E80341 /* DecisionSpace.h */; };
+		72059AAC1715C77C00E80341 /* DecisionSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AAB1715C77C00E80341 /* DecisionSpace.m */; };
+		72059AB41715C77D00E80341 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72059AB31715C77D00E80341 /* SenTestingKit.framework */; };
+		72059AB61715C77D00E80341 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72059AB51715C77D00E80341 /* UIKit.framework */; };
+		72059AB71715C77D00E80341 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72059AA41715C77C00E80341 /* Foundation.framework */; };
+		72059ABA1715C77D00E80341 /* libDecisionSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72059AA11715C77C00E80341 /* libDecisionSpace.a */; };
+		72059AC01715C77D00E80341 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72059ABE1715C77D00E80341 /* InfoPlist.strings */; };
+		72059AC31715C77D00E80341 /* DecisionSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AC21715C77D00E80341 /* DecisionSpaceTests.m */; };
+		72059ACF1715C83300E80341 /* DSParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059ACE1715C83300E80341 /* DSParam.m */; };
+		72059AD01715C83300E80341 /* DSParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059ACE1715C83300E80341 /* DSParam.m */; };
+		72059AD31715CA0F00E80341 /* DSValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AD21715CA0F00E80341 /* DSValue.m */; };
+		72059AD41715CA0F00E80341 /* DSValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AD21715CA0F00E80341 /* DSValue.m */; };
+		72059AD71715CA5800E80341 /* DSDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AD61715CA5800E80341 /* DSDomain.m */; };
+		72059AD81715CA5800E80341 /* DSDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059AD61715CA5800E80341 /* DSDomain.m */; };
+		72059ADB1715CFB200E80341 /* DSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059ADA1715CFB100E80341 /* DSSystem.m */; };
+		72059ADC1715CFB200E80341 /* DSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72059ADA1715CFB100E80341 /* DSSystem.m */; };
+		722C722B17193DA500F5E7D8 /* DSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C722A17193DA500F5E7D8 /* DSRule.m */; };
+		722C722C17193DA500F5E7D8 /* DSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C722A17193DA500F5E7D8 /* DSRule.m */; };
+		722C723017193DF100F5E7D8 /* DSShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C722F17193DF100F5E7D8 /* DSShadow.m */; };
+		722C723117193DF100F5E7D8 /* DSShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C722F17193DF100F5E7D8 /* DSShadow.m */; };
+		722C7237171946F000F5E7D8 /* DSPermute.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C7236171946F000F5E7D8 /* DSPermute.m */; };
+		722C7238171946F000F5E7D8 /* DSPermute.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C7236171946F000F5E7D8 /* DSPermute.m */; };
+		722C723B1719470600F5E7D8 /* DSPermuteElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C723A1719470600F5E7D8 /* DSPermuteElement.m */; };
+		722C723C1719470600F5E7D8 /* DSPermuteElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C723A1719470600F5E7D8 /* DSPermuteElement.m */; };
+		725BAF1917173665000FB526 /* DSAtomicStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF1817173665000FB526 /* DSAtomicStatement.m */; };
+		725BAF1A17173665000FB526 /* DSAtomicStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF1817173665000FB526 /* DSAtomicStatement.m */; };
+		725BAF1E171736E0000FB526 /* DSCompoundStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF1D171736E0000FB526 /* DSCompoundStatement.m */; };
+		725BAF1F171736E0000FB526 /* DSCompoundStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF1D171736E0000FB526 /* DSCompoundStatement.m */; };
+		725BAF22171737B9000FB526 /* DSCompoundStatementSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF21171737B8000FB526 /* DSCompoundStatementSet.m */; };
+		725BAF23171737B9000FB526 /* DSCompoundStatementSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF21171737B8000FB526 /* DSCompoundStatementSet.m */; };
+		725BAF2B171738CB000FB526 /* DSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF2A171738CB000FB526 /* DSTree.m */; };
+		725BAF2C171738CB000FB526 /* DSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BAF2A171738CB000FB526 /* DSTree.m */; };
+		7290033817201D7E0072A001 /* DSTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 725BAF29171738CB000FB526 /* DSTree.h */; };
+		7290033917201D7E0072A001 /* DSPermuteElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 722C72391719470600F5E7D8 /* DSPermuteElement.h */; };
+		7290033A17201D7E0072A001 /* DSPermute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 722C7235171946F000F5E7D8 /* DSPermute.h */; };
+		7290033B17201D7E0072A001 /* Definitions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 722C72341719418D00F5E7D8 /* Definitions.h */; };
+		7290033C17201D7E0072A001 /* DSParam.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72059ACD1715C83300E80341 /* DSParam.h */; };
+		7290033D17201D7E0072A001 /* DSValue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72059AD11715CA0F00E80341 /* DSValue.h */; };
+		7290033E17201D7E0072A001 /* DSDomain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72059AD51715CA5800E80341 /* DSDomain.h */; };
+		7290033F17201D7E0072A001 /* DSSystem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72059AD91715CFB100E80341 /* DSSystem.h */; };
+		7290034017201D7E0072A001 /* DSAtomicStatement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 725BAF1717173665000FB526 /* DSAtomicStatement.h */; };
+		7290034117201D7E0072A001 /* DSCompoundStatement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 725BAF1C171736E0000FB526 /* DSCompoundStatement.h */; };
+		7290034217201D7E0072A001 /* DSCompoundStatementSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 725BAF20171737B8000FB526 /* DSCompoundStatementSet.h */; };
+		7290034317201D7E0072A001 /* DSRule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 722C722917193DA500F5E7D8 /* DSRule.h */; };
+		7290034417201D7E0072A001 /* DSShadow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 722C722E17193DF100F5E7D8 /* DSShadow.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72059AB81715C77D00E80341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72059A981715C77C00E80341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72059AA01715C77C00E80341;
+			remoteInfo = DecisionSpace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72059A9F1715C77C00E80341 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				7290033817201D7E0072A001 /* DSTree.h in CopyFiles */,
+				7290033917201D7E0072A001 /* DSPermuteElement.h in CopyFiles */,
+				7290033A17201D7E0072A001 /* DSPermute.h in CopyFiles */,
+				7290033B17201D7E0072A001 /* Definitions.h in CopyFiles */,
+				7290033C17201D7E0072A001 /* DSParam.h in CopyFiles */,
+				7290033D17201D7E0072A001 /* DSValue.h in CopyFiles */,
+				7290033E17201D7E0072A001 /* DSDomain.h in CopyFiles */,
+				7290033F17201D7E0072A001 /* DSSystem.h in CopyFiles */,
+				7290034017201D7E0072A001 /* DSAtomicStatement.h in CopyFiles */,
+				7290034117201D7E0072A001 /* DSCompoundStatement.h in CopyFiles */,
+				7290034217201D7E0072A001 /* DSCompoundStatementSet.h in CopyFiles */,
+				7290034317201D7E0072A001 /* DSRule.h in CopyFiles */,
+				7290034417201D7E0072A001 /* DSShadow.h in CopyFiles */,
+				72059AAA1715C77C00E80341 /* DecisionSpace.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72059AA11715C77C00E80341 /* libDecisionSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDecisionSpace.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72059AA41715C77C00E80341 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72059AA81715C77C00E80341 /* DecisionSpace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DecisionSpace-Prefix.pch"; sourceTree = "<group>"; };
+		72059AA91715C77C00E80341 /* DecisionSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecisionSpace.h; sourceTree = "<group>"; };
+		72059AAB1715C77C00E80341 /* DecisionSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecisionSpace.m; sourceTree = "<group>"; };
+		72059AB21715C77D00E80341 /* DecisionSpaceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecisionSpaceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72059AB31715C77D00E80341 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		72059AB51715C77D00E80341 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		72059ABD1715C77D00E80341 /* DecisionSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DecisionSpaceTests-Info.plist"; sourceTree = "<group>"; };
+		72059ABF1715C77D00E80341 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72059AC11715C77D00E80341 /* DecisionSpaceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecisionSpaceTests.h; sourceTree = "<group>"; };
+		72059AC21715C77D00E80341 /* DecisionSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecisionSpaceTests.m; sourceTree = "<group>"; };
+		72059ACD1715C83300E80341 /* DSParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParam.h; sourceTree = "<group>"; };
+		72059ACE1715C83300E80341 /* DSParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSParam.m; sourceTree = "<group>"; };
+		72059AD11715CA0F00E80341 /* DSValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSValue.h; sourceTree = "<group>"; };
+		72059AD21715CA0F00E80341 /* DSValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSValue.m; sourceTree = "<group>"; };
+		72059AD51715CA5800E80341 /* DSDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDomain.h; sourceTree = "<group>"; };
+		72059AD61715CA5800E80341 /* DSDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDomain.m; sourceTree = "<group>"; };
+		72059AD91715CFB100E80341 /* DSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSystem.h; sourceTree = "<group>"; };
+		72059ADA1715CFB100E80341 /* DSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSystem.m; sourceTree = "<group>"; };
+		722C722917193DA500F5E7D8 /* DSRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSRule.h; sourceTree = "<group>"; };
+		722C722A17193DA500F5E7D8 /* DSRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSRule.m; sourceTree = "<group>"; };
+		722C722E17193DF100F5E7D8 /* DSShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSShadow.h; sourceTree = "<group>"; };
+		722C722F17193DF100F5E7D8 /* DSShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSShadow.m; sourceTree = "<group>"; };
+		722C72341719418D00F5E7D8 /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		722C7235171946F000F5E7D8 /* DSPermute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPermute.h; sourceTree = "<group>"; };
+		722C7236171946F000F5E7D8 /* DSPermute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPermute.m; sourceTree = "<group>"; };
+		722C72391719470600F5E7D8 /* DSPermuteElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPermuteElement.h; sourceTree = "<group>"; };
+		722C723A1719470600F5E7D8 /* DSPermuteElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPermuteElement.m; sourceTree = "<group>"; };
+		725BAF1717173665000FB526 /* DSAtomicStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAtomicStatement.h; sourceTree = "<group>"; };
+		725BAF1817173665000FB526 /* DSAtomicStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAtomicStatement.m; sourceTree = "<group>"; };
+		725BAF1C171736E0000FB526 /* DSCompoundStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCompoundStatement.h; sourceTree = "<group>"; };
+		725BAF1D171736E0000FB526 /* DSCompoundStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCompoundStatement.m; sourceTree = "<group>"; };
+		725BAF20171737B8000FB526 /* DSCompoundStatementSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCompoundStatementSet.h; sourceTree = "<group>"; };
+		725BAF21171737B8000FB526 /* DSCompoundStatementSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCompoundStatementSet.m; sourceTree = "<group>"; };
+		725BAF29171738CB000FB526 /* DSTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTree.h; sourceTree = "<group>"; };
+		725BAF2A171738CB000FB526 /* DSTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTree.m; sourceTree = "<group>"; };
+		728E82EB179BF7D800230514 /* DSIncludes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = DSIncludes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72059A9E1715C77C00E80341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72059AA51715C77C00E80341 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72059AAE1715C77D00E80341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72059AB41715C77D00E80341 /* SenTestingKit.framework in Frameworks */,
+				72059AB61715C77D00E80341 /* UIKit.framework in Frameworks */,
+				72059AB71715C77D00E80341 /* Foundation.framework in Frameworks */,
+				72059ABA1715C77D00E80341 /* libDecisionSpace.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72059A961715C77C00E80341 = {
+			isa = PBXGroup;
+			children = (
+				72059AA61715C77C00E80341 /* DecisionSpace */,
+				72059ABB1715C77D00E80341 /* DecisionSpaceTests */,
+				72059AA31715C77C00E80341 /* Frameworks */,
+				72059AA21715C77C00E80341 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72059AA21715C77C00E80341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72059AA11715C77C00E80341 /* libDecisionSpace.a */,
+				72059AB21715C77D00E80341 /* DecisionSpaceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72059AA31715C77C00E80341 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72059AA41715C77C00E80341 /* Foundation.framework */,
+				72059AB31715C77D00E80341 /* SenTestingKit.framework */,
+				72059AB51715C77D00E80341 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72059AA61715C77C00E80341 /* DecisionSpace */ = {
+			isa = PBXGroup;
+			children = (
+				725BAF28171738BD000FB526 /* Utils */,
+				72059ACC1715C7C500E80341 /* Core */,
+				72059AA91715C77C00E80341 /* DecisionSpace.h */,
+				72059AAB1715C77C00E80341 /* DecisionSpace.m */,
+				72059AA71715C77C00E80341 /* Supporting Files */,
+			);
+			path = DecisionSpace;
+			sourceTree = "<group>";
+		};
+		72059AA71715C77C00E80341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72059AA81715C77C00E80341 /* DecisionSpace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72059ABB1715C77D00E80341 /* DecisionSpaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				72059AC11715C77D00E80341 /* DecisionSpaceTests.h */,
+				72059AC21715C77D00E80341 /* DecisionSpaceTests.m */,
+				72059ABC1715C77D00E80341 /* Supporting Files */,
+			);
+			path = DecisionSpaceTests;
+			sourceTree = "<group>";
+		};
+		72059ABC1715C77D00E80341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72059ABD1715C77D00E80341 /* DecisionSpaceTests-Info.plist */,
+				72059ABE1715C77D00E80341 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72059ACC1715C7C500E80341 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				722C72341719418D00F5E7D8 /* Definitions.h */,
+				72059ACD1715C83300E80341 /* DSParam.h */,
+				72059ACE1715C83300E80341 /* DSParam.m */,
+				72059AD11715CA0F00E80341 /* DSValue.h */,
+				72059AD21715CA0F00E80341 /* DSValue.m */,
+				72059AD51715CA5800E80341 /* DSDomain.h */,
+				72059AD61715CA5800E80341 /* DSDomain.m */,
+				72059AD91715CFB100E80341 /* DSSystem.h */,
+				72059ADA1715CFB100E80341 /* DSSystem.m */,
+				725BAF1717173665000FB526 /* DSAtomicStatement.h */,
+				725BAF1817173665000FB526 /* DSAtomicStatement.m */,
+				725BAF1C171736E0000FB526 /* DSCompoundStatement.h */,
+				725BAF1D171736E0000FB526 /* DSCompoundStatement.m */,
+				725BAF20171737B8000FB526 /* DSCompoundStatementSet.h */,
+				725BAF21171737B8000FB526 /* DSCompoundStatementSet.m */,
+				722C722917193DA500F5E7D8 /* DSRule.h */,
+				722C722A17193DA500F5E7D8 /* DSRule.m */,
+				722C722E17193DF100F5E7D8 /* DSShadow.h */,
+				722C722F17193DF100F5E7D8 /* DSShadow.m */,
+				728E82EB179BF7D800230514 /* DSIncludes.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		725BAF28171738BD000FB526 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				725BAF29171738CB000FB526 /* DSTree.h */,
+				725BAF2A171738CB000FB526 /* DSTree.m */,
+				722C72391719470600F5E7D8 /* DSPermuteElement.h */,
+				722C723A1719470600F5E7D8 /* DSPermuteElement.m */,
+				722C7235171946F000F5E7D8 /* DSPermute.h */,
+				722C7236171946F000F5E7D8 /* DSPermute.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72059AA01715C77C00E80341 /* DecisionSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72059AC61715C77D00E80341 /* Build configuration list for PBXNativeTarget "DecisionSpace" */;
+			buildPhases = (
+				72059A9D1715C77C00E80341 /* Sources */,
+				72059A9E1715C77C00E80341 /* Frameworks */,
+				72059A9F1715C77C00E80341 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecisionSpace;
+			productName = DecisionSpace;
+			productReference = 72059AA11715C77C00E80341 /* libDecisionSpace.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		72059AB11715C77D00E80341 /* DecisionSpaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72059AC91715C77D00E80341 /* Build configuration list for PBXNativeTarget "DecisionSpaceTests" */;
+			buildPhases = (
+				72059AAD1715C77D00E80341 /* Sources */,
+				72059AAE1715C77D00E80341 /* Frameworks */,
+				72059AAF1715C77D00E80341 /* Resources */,
+				72059AB01715C77D00E80341 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72059AB91715C77D00E80341 /* PBXTargetDependency */,
+			);
+			name = DecisionSpaceTests;
+			productName = DecisionSpaceTests;
+			productReference = 72059AB21715C77D00E80341 /* DecisionSpaceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72059A981715C77C00E80341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = 99XTechnology;
+			};
+			buildConfigurationList = 72059A9B1715C77C00E80341 /* Build configuration list for PBXProject "DecisionSpace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72059A961715C77C00E80341;
+			productRefGroup = 72059AA21715C77C00E80341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72059AA01715C77C00E80341 /* DecisionSpace */,
+				72059AB11715C77D00E80341 /* DecisionSpaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72059AAF1715C77D00E80341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72059AC01715C77D00E80341 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72059AB01715C77D00E80341 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72059A9D1715C77C00E80341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72059AAC1715C77C00E80341 /* DecisionSpace.m in Sources */,
+				72059ACF1715C83300E80341 /* DSParam.m in Sources */,
+				72059AD31715CA0F00E80341 /* DSValue.m in Sources */,
+				72059AD71715CA5800E80341 /* DSDomain.m in Sources */,
+				72059ADB1715CFB200E80341 /* DSSystem.m in Sources */,
+				725BAF1917173665000FB526 /* DSAtomicStatement.m in Sources */,
+				725BAF1E171736E0000FB526 /* DSCompoundStatement.m in Sources */,
+				725BAF22171737B9000FB526 /* DSCompoundStatementSet.m in Sources */,
+				725BAF2B171738CB000FB526 /* DSTree.m in Sources */,
+				722C722B17193DA500F5E7D8 /* DSRule.m in Sources */,
+				722C723017193DF100F5E7D8 /* DSShadow.m in Sources */,
+				722C7237171946F000F5E7D8 /* DSPermute.m in Sources */,
+				722C723B1719470600F5E7D8 /* DSPermuteElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72059AAD1715C77D00E80341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72059AC31715C77D00E80341 /* DecisionSpaceTests.m in Sources */,
+				72059AD01715C83300E80341 /* DSParam.m in Sources */,
+				72059AD41715CA0F00E80341 /* DSValue.m in Sources */,
+				72059AD81715CA5800E80341 /* DSDomain.m in Sources */,
+				72059ADC1715CFB200E80341 /* DSSystem.m in Sources */,
+				725BAF1A17173665000FB526 /* DSAtomicStatement.m in Sources */,
+				725BAF1F171736E0000FB526 /* DSCompoundStatement.m in Sources */,
+				725BAF23171737B9000FB526 /* DSCompoundStatementSet.m in Sources */,
+				725BAF2C171738CB000FB526 /* DSTree.m in Sources */,
+				722C722C17193DA500F5E7D8 /* DSRule.m in Sources */,
+				722C723117193DF100F5E7D8 /* DSShadow.m in Sources */,
+				722C7238171946F000F5E7D8 /* DSPermute.m in Sources */,
+				722C723C1719470600F5E7D8 /* DSPermuteElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72059AB91715C77D00E80341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72059AA01715C77C00E80341 /* DecisionSpace */;
+			targetProxy = 72059AB81715C77D00E80341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72059ABE1715C77D00E80341 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72059ABF1715C77D00E80341 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72059AC41715C77D00E80341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72059AC51715C77D00E80341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72059AC71715C77D00E80341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DecisionSpace.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecisionSpace/DecisionSpace-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72059AC81715C77D00E80341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DecisionSpace.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecisionSpace/DecisionSpace-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		72059ACA1715C77D00E80341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecisionSpace/DecisionSpace-Prefix.pch";
+				INFOPLIST_FILE = "DecisionSpaceTests/DecisionSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		72059ACB1715C77D00E80341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecisionSpace/DecisionSpace-Prefix.pch";
+				INFOPLIST_FILE = "DecisionSpaceTests/DecisionSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72059A9B1715C77C00E80341 /* Build configuration list for PBXProject "DecisionSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72059AC41715C77D00E80341 /* Debug */,
+				72059AC51715C77D00E80341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72059AC61715C77D00E80341 /* Build configuration list for PBXNativeTarget "DecisionSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72059AC71715C77D00E80341 /* Debug */,
+				72059AC81715C77D00E80341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72059AC91715C77D00E80341 /* Build configuration list for PBXNativeTarget "DecisionSpaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72059ACA1715C77D00E80341 /* Debug */,
+				72059ACB1715C77D00E80341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72059A981715C77C00E80341 /* Project object */;
+}
